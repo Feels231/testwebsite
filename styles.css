@@ -1,3 +1,6 @@
+ul,li {list-style-type: none;}
+
 .mainheader {
     background-color:darkolivegreen;
+    padding:10px;
 }
