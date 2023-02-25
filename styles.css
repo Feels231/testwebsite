@@ -40,11 +40,17 @@ header {
     /* border:5px solid red; */
     align-self:Center;
     max-height: 30%;
+    padding-top:30px;
+    padding-left:30px;
+    /* border-top: 5px dashed rgb(2, 49, 2); */
 }
 
 .mainimg {
-   align-self:center;
-   padding:20px;
+   display:flex;
+    align-self:center;
+   padding:8px;
+   background-clip: content-box;
+  box-shadow: inset 0 0 0 10px rgb(2, 49, 2);
 
 }
 
@@ -57,35 +63,41 @@ header {
 .dis-header {
     display:flex;
     justify-content: space-between;
-    min-width:100%;
+    border-bottom: 5px dashed rgb(2, 49, 2);
+    width: 100vw;
+    max-width:100%;
 }
 
 /*header ends here */
 
+/* middle area begins here */
 .notables {
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    background-color: olive;
-    border:5px solid rgb(2, 49, 2);
-    padding: 20px;
-}
-
-.item {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-
+    background-color: olive;
+    border: 5px solid rgb(2, 49, 2);
+    padding: 20px;
+    max-height: fit-content;
 }
 
-.info{max-width: 200px;}
+.notables > .pictures {
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+    flex:1;
+    
+}
+
+.title {text-shadow: 1px 1px 1px black, 2px 2px 1px rgb(2, 49, 2); color: rgb(2, 49, 2)}
+.info{max-width: 200px; text-align: center;text-shadow: 1px 1px 1px rgb(2, 49, 2), 2px 2px 1px rgb(2, 49, 2);}
 
 .item > img {
 width:200px;
 height:200px;
 padding:10px;
 border-radius: 100px;
+
 }
+
