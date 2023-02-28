@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepe</title>
     <link rel="stylesheet" href="styles.css">
+<script>
+function sound(){
+     var snd = new Audio('/home/feels/Downloads/beta.mp3')//wav is also supported
+     snd.play()//plays the sound
+}
+</script>
 </head>
 <body>
     <header>
@@ -78,16 +84,18 @@
 </div>
 
 <div class="question">
-    <p>Time for a quick question.</p>
-    <p>Were you offended by the contents of this website?</p>
-<button>Of course not!</button>
-<button>Im a big baby!</button>
-</div>    
+    <div class="container">
+        <div class="left">
+            <p class="first">Time for a quick question:</p>
+            <p>Were you offended by the contents of this website?</p>
+        </div>
+        <div class="right">
+            <button>Of course not!</button>
+            <button onclick="sound()">Im a big baby!</button>
+        </div>    
+    </div>
+</div>
+
 
 </body>
-
-
-
-
-
 </html>
